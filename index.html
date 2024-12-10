@@ -4,7 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto de Demanda de Energía</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        section#inicio {
+            background-color: #f4f4f4;
+        }
+
+        section#proyecto, section#dataset {
+            background-color: #eaf7ea;
+        }
+
+        section h2 {
+            color: #4CAF50;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        button, a.button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        button:hover, a.button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,12 +95,14 @@
     <section id="inicio">
         <h1>Bienvenido a mi Proyecto de Demanda de Energía</h1>
         <p>Explora cómo predecimos la demanda energética utilizando modelos avanzados como LSTM y datos climáticos.</p>
+        <a href="#proyecto" class="button">Ver más</a>
     </section>
 
     <section id="proyecto">
         <h2>Sobre el Proyecto</h2>
         <p>Este proyecto utiliza datos de demanda de energía y condiciones climáticas para entrenar un modelo LSTM que realiza predicciones precisas. Las variables clave incluyen temperatura, humedad, presión atmosférica, y velocidad del viento.</p>
-        <a href="https://github.com/tuusuario/tu-repositorio" target="_blank">Ver en GitHub</a>
+        <a href="https://github.com/IvanValdez24/Proyectodemanda" target="_blank" class="button">Ver en GitHub</a>
+        <a href="https://github.com/IvanValdez24/Proyectodemanda/blob/main/proyecdemanda.ipynb" target="_blank" class="button">Ver Código</a>
     </section>
 
     <section id="dataset">
@@ -44,20 +120,19 @@
     <section id="contacto">
         <h2>Contacto</h2>
         <p>Si tienes alguna pregunta o sugerencia, no dudes en contactarme.</p>
-        <form action="https://formspree.io/f/tu-correo" method="POST">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
+        <form action="https://formspree.io/f/maurizio.valdez@fiuna.edu.py" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" required></textarea><br>
             <button type="submit">Enviar</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Maurizio Valdez. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
-
